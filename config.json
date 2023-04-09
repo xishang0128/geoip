@@ -6,6 +6,10 @@
       "args": {
         "inputDir": "./data"
       }
+    },
+    {
+      "type": "private",
+      "action": "add"
     }
   ],
   "output": [
@@ -17,10 +21,34 @@
       }
     },
     {
+      "type": "v2rayGeoIPDat",
+      "action": "output",
+      "args": {
+        "outputName": "geoip-only-cn-private.dat",
+        "wantedList": ["cn", "private"]
+      }
+    },
+    {
       "type": "maxmindMMDB",
       "action": "output",
       "args": {
         "outputName": "Country.mmdb"
+      }
+    },
+    {
+      "type": "maxmindMMDB",
+      "action": "output",
+      "args": {
+        "outputName": "cn.mmdb",
+        "overwriteList": ["cn"]
+      }
+    },
+    {
+      "type": "maxmindMMDB",
+      "action": "output",
+      "args": {
+        "outputName": "Country-only-cn-private.mmdb",
+        "wantedList": ["cn", "private"]
       }
     },
     {
