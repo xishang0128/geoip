@@ -13,6 +13,7 @@
   - `geoip:netflix`（`GEOIP,NETFLIX`）
   - `geoip:telegram`（`GEOIP,TELEGRAM`）
   - `geoip:twitter`（`GEOIP,TWITTER`）
+  - `geoip:bilibili`（`GEOIP,BILIBILI`）
 
 ## License
 
