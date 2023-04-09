@@ -40,7 +40,7 @@
       "action": "output",
       "args": {
         "outputName": "cn.mmdb",
-        "overwriteList": ["cn"]
+        "wantedList": ["cn"]
       }
     },
     {
