@@ -4,7 +4,7 @@
 
 
 ## 与官方版 GeoIP 的区别
-国家仅包含cn
+国家仅包含cn/jp
 - 新增类别（方便有特殊需求的用户使用）：
   - `geoip:cloudflare`（`GEOIP,CLOUDFLARE`）
   - `geoip:cloudfront`（`GEOIP,CLOUDFRONT`）
