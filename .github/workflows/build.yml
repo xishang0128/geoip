@@ -46,7 +46,8 @@ jobs:
           curl -sSL http://ftp.apnic.net/stats/apnic/delegated-apnic-latest | awk -F '|' '/CN/&&/ipv4/ {print $4 "/" 32-log($5)/log(2)}' > data/cn
           curl -sSL http://ftp.apnic.net/stats/apnic/delegated-apnic-latest | awk -F '|' '/CN/&&/ipv6/ {print $4 "/" $5}' >> data/cn
           curl -sSL https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/BiliBili/BiliBili_Resolve.list | grep IP-CIDR, | sed 's/IP-CIDR,//g' > data/bilibili
-          curl -sSL http://ftp.apnic.net/stats/apnic/delegated-apnic-latest | awk -F '|' '/JP/&&/ipv4/ {print $4 "/" 32-log($5)/log(2)}' > data/jp
+          curl -sSL https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/Apple/Apple_Resolve.list | grep IP-CIDR, | sed 's/IP-CIDR,//g' > data/apple
+          curl -sSL http://fftp.apnic.net/stats/apnic/delegated-apnic-latest | awk -F '|' '/JP/&&/ipv4/ {print $4 "/" 32-log($5)/log(2)}' > data/jp
           curl -sSL http://ftp.apnic.net/stats/apnic/delegated-apnic-latest | awk -F '|' '/JP/&&/ipv6/ {print $4 "/" $5}' >> data/jp
 
 
