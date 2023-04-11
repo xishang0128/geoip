@@ -14,6 +14,7 @@
   - `geoip:telegram`（`GEOIP,TELEGRAM`）
   - `geoip:twitter`（`GEOIP,TWITTER`）
   - `geoip:bilibili`（`GEOIP,BILIBILI`）
+  - `geoip:apple`（`GEOIP,APPLE`）
 
 ## License
 
