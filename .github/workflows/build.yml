@@ -107,7 +107,7 @@ jobs:
         run: rm -rf ./publish/*.{gz,zip} ./publish/text
 
       - name: Upload files to GitHub release
-        uses: softprops/action-gh-release@v0.1.6
+        uses: softprops/action-gh-release@v1
         with:
           name: latest
           tag_name: latest
