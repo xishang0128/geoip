@@ -81,6 +81,8 @@ jobs:
       - name: Move files to publish directory
         run: |
           mkdir -p publish
+          wget -nv -O- "https://download.maxmind.com/app/geoip_download?edition_id=GeoLite2-ASN&license_key=${{ secrets.LICENSE_KEY }}&suffix=tar.gz" | tar zxv
+          cp -v GeoLite*/*.mmdb upload
           mv ./output/dat/*.dat ./output/dat/*.sha256sum ./output/maxmind/*.mmdb ./output/maxmind/*.sha256sum ./publish/
           cp ./data/cn ./publish/cn.txt
           cp ./ip.txt ./publish/ip.txt
